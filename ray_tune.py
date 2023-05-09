@@ -7,8 +7,8 @@ import numpy as np
 
 # Load the forest cover type dataset
 covtype = fetch_covtype()
-X = covtype.data
-y = covtype.target
+X = covtype.data[:10000]
+y = covtype.target[:10000]
 
 # Define the hyperparameters to tune
 config = {
